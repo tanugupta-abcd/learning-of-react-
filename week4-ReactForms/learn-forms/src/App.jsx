@@ -9,10 +9,12 @@ import IntoForm from './introductionToForm/IntoForm'
 function App() {
 
   return (
-    // <IntoForm/>
-    //  <SignIn/>
-    // <SignUp/>
-    <ZodLogin/>
+    <>
+    {/* <IntoForm/> */}
+     {/* <SignIn/> */}
+    <SignUp/>
+    {/* <ZodLogin/> */}
+    </>
   )
 }
 

@@ -10,12 +10,12 @@ const ZodLogin = () => {
     // const [errors, setErrors] = useState({});
 
    const zodSchema = z.object({
-        email: z.string().trim().email("Not a Valid Email Bro"),
+        email: z.string().trim().email(),
         password: z
             .string()
             .trim()
-            .min(6, "We need 6 chars at least")
-            .max(10, "Not more than 10 chars bro"),
+            .min(6)
+            .max(10)
     });
 
     function handleFormSubmit(e) {
