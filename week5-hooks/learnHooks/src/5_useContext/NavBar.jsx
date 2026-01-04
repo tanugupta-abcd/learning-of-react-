@@ -1,13 +1,15 @@
-import React, { useContext } from 'react'
-import { myData } from './auth-context';
+import { useContext } from "react"
+import { AuthContext } from "./auth-context"
+
 
 const NavBar = () => {
   
-   const Data = useContext(myData);
+ const contextData = useContext(AuthContext);
 
   return (
     <div style={{background:'lightblue', height:'10vh'}}>
-      navBar{Data.name}
+     
+      navbar {contextData.name}
     </div>
   )
 }

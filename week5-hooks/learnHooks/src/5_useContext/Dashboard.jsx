@@ -5,8 +5,8 @@ import NavBar from './navBar'
 const Dashboard = () => {
   return (
     <div>
-      <NavBar/>
-      <Main/>
+      <NavBar />
+      <Main />
     </div>
   )
 }

@@ -1,24 +1,24 @@
 
 import './App.css'
-import LearnUseReducer from ' ./1_useReducer/learnUseReducer'
+// import LearnUseReducer from ' ./1_useReducer/learnUseReducer'
 import Dashboard from './5_useContext/Dashboard'
-// import {} from './5_useContext/auth-context' 
+import { AuthContext } from './5_useContext/auth-context' 
 import { useState } from 'react'
-import { MyData } from './5_useContext/auth-context'
 
 function App() {
 
-  const [user, setUser ] =useState({
+  const [user, setUser ] = useState({
     name:"tanu",
+    age:22,
   })
 
   return (
-    <MyData.Provider value={user}>
+    <AuthContext.Provider value={user}>
        <>
-            <LearnUseReducer/>
-            <Dashboard />
+            {/* <LearnUseReducer/> */}
+            <Dashboard user={user}/>
        </>
-    </MyData.Provider>
+    </AuthContext.Provider>
   )
 }
 

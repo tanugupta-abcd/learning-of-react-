@@ -53,7 +53,6 @@ const LearnUseReducer = () => {
        <br />
        <button onClick={handleMultiply}>multipy by 2</button>
        <button onClick={handleDivide}>divide by 2</button>
-
     </div>
   )
 }

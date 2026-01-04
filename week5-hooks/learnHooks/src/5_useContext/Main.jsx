@@ -1,14 +1,15 @@
-import React, { useContext } from 'react'
-import { myData } from './auth-context';
+import { useContext } from "react"
+import { AuthContext } from "./auth-context";
+
 
 const Main = () => {
 
-    const Data = useContext(myData);
+    const contextData = useContext(AuthContext);
 
   return (
     <div style={{background:'lightpink', height:'80vh'}}>
-      main {Data.name}
-
+      
+         Main {contextData.name}
     </div>
   )
 }
